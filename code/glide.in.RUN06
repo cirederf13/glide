@@ -1,0 +1,53 @@
+$ This is the input file GLIDE
+$ This is the input file for the results shown in Fig 2 of Willett et al.
+$ This is example with poor data distribution inspired from Schildgen et al.
+$ and prior=solution
+
+$ (Input 1) Name of the run (also the name of the folder in which the solution is stored)
+$ The name should be 5 letters long
+
+RUN06
+
+$ (Input 2) Name of the topo file used
+
+"data/topo.txt"
+
+$ (Input 3) Number of points (nx, ny) in the longitude and latitude directions
+
+178 143
+
+$ (Input 4) Data file, containing lon,lat,z,a,e,iflag
+
+"data/ages_307.txt"
+
+$ (Input 5) Region of interest, should be smaller than topography 
+
+6.108 7.593 45.149 46.409
+
+$ (Input 6) A priori estimate of the mean exhumation rate, 
+$ along with a prior uncertainity on this estimate in km/Myrs
+
+.25 .1
+
+$correlation parameters, anisotropy(i.e. strike could be the orogen), correlation length is isotropic 
+$ (Input 7) Correlation length scale, in km', angle perpendicular to strike, stretching along angle
+$ the four parameter is to prescibe correlation in time
+
+30. 0. 0. .000000001
+
+$ (Input 8) Time step length, in Myrs
+
+2.
+
+$ (Input 9) End time
+
+36.
+
+$ (Input 8) Thermal parameters,
+$ Thermal thickness (km), T_surface(C) at 0,T_base(C),diffusivity(km2/Myr),heat production(C/Myr)
+
+30. 0. 600. 30. 0.0001
+
+$error type
+
+5
