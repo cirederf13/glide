@@ -1,3 +1,0 @@
-
-LIBS= -framework Accelerate
-
