@@ -1,5 +1,0 @@
-F90 = gfortran
-CC = gcc
-FLAGS = -c -fopenmp -ffixed-line-length-none
-INCLUDE = 
-OPTIONS = 
