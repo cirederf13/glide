@@ -39,7 +39,6 @@ xlon=xmin
 
 ny_2=2048
 
-print*,'in isotherms'
 !minimum power of 2 that's suitable
 nx_2 = 2**float(ceiling(log(float(nx*2))/log(2.)))
 ny_2 = 2**float(ceiling(log(float(ny*2))/log(2.)))
@@ -277,9 +276,9 @@ do i=1,params%n
         (1.-t)*u*elev(i1,j1+1) - matrices%elev(i)
  endif
 enddo
-print*,'apatite fission track',minval(s(:,:,1)),maxval(s(:,:,3))
-print*,'apatite helium',minval(s(:,:,3)),maxval(s(:,:,3))
-print*,'data zc',minval(matrices%zc),maxval(matrices%zc)
+!print*,'apatite fission track',minval(s(:,:,1)),maxval(s(:,:,3))
+!print*,'apatite helium',minval(s(:,:,3)),maxval(s(:,:,3))
+!print*,'data zc',minval(matrices%zc),maxval(matrices%zc)
 
 deallocate(a,a_ffted)
         

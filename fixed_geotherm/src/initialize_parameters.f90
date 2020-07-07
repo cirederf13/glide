@@ -141,7 +141,7 @@ print*,'min age=',minval(matrices%ta),'max age=',maxval(matrices%ta)
 matrices%elev_true=matrices%elev
 
 !We define the dummy points every n km, n is defined as spacin
-print*,'creating dummy points'
+!print*,'creating dummy points'
 !uniform grid
 !params%dummy=nx_dum*ny_dum+params%contr
 !allocate(matrices%x_dum(params%dummy),matrices%y_dum(params%dummy))
@@ -338,7 +338,7 @@ mean_elev = sum(topob)/float(nx*ny)
 params%Ts = params%Ts - mean_elev*0.006
 params%zl = params%zl + (mean_elev/1000.)
 
-print*,"Temperature of thermal model at z=0",params%Ts,"at an elevation of",mean_elev
+!print*,"Temperature of thermal model at z=0",params%Ts,"at an elevation of",mean_elev
 
 call prior_zc(matrices,params)
 
