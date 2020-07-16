@@ -216,17 +216,6 @@ enddo
 
 print*,"min syn_age=",minval(matrices%syn_age),"max syn_age=",maxval(matrices%syn_age)
 
-!deallocate(geotherm)
-!to predict ages
-!print*,'predicting ages'
-!open(87,file='predictedages.txt',status='unknown')
-!do k=1,params%n
-!write(87,*) matrices%x_true(k),matrices%y_true(k),matrices%elev_true(k),&
-!            matrices%syn_age(k),matrices%a_error(k),matrices%isys(k)
-!enddo
-!close(87)
-!stop
-
 deallocate(geotherm)
 
 matrices%misfits=abs(matrices%syn_age-matrices%ta)
